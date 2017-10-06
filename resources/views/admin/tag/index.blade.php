@@ -6,7 +6,7 @@
 
         <div class="panel panel-default">
             <div class="panel-heading">
-                <p class="text-center"> Categories Table</p>
+                <p class="text-center"> Tags Table</p>
 
             </div>
 
@@ -14,7 +14,7 @@
             <div class="panel-body">
                <table class="table table-hover">
                    <thead>
-                       <th>Categories</th>
+                       <th>Tags</th>
                        <th>Editing</th>
                        <th>Deleting</th>
                    </thead>
@@ -22,19 +22,19 @@
 
                     <tbody>
 
-                        @if ($categories->count() > 0)
-                              @foreach ($categories as $category)
+                        @if ($tag->count() > 0)
+                              @foreach ($tag as $tags)
                                 <tr> 
                                     <td>
-                                            {{ $category->category }}
+                                            {{ $tags->tag }}
                                     </td> 
 
                                     <td>
-                                        <a href="{{ route('category.edit', ['id'=>$category->id]) }}" class="btn btn-xs btn-primary">Edit</a>
+                                       <a href="{{ route('tag.edit', ['id' => $tags->id ]) }}" class="btn btn-xs btn-primary">Edit</a> 
                                     </td>
 
                                     <td>
-                                        <a href="{{ route('category.destroy', ['id'=>$category->id]) }}" class="btn btn-xs btn-danger">Delete</a>
+                                        <a href="{{ route('tag.destroy', ['id'=> $tags->id] ) }}" class="btn btn-xs btn-danger">Delete</a> 
                                     </td>
                                 </tr>
                             @endforeach     
@@ -43,7 +43,7 @@
 
                             <tr>
                                 <th colspan="5" class="text-center">
-                                    No Categroies Published
+                                    No Tags Published
                                 </th>
                             </tr>
 
