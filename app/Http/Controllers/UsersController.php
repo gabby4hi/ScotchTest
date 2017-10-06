@@ -16,6 +16,7 @@ class UsersController extends Controller
      */
     public function __construct(){
 
+        //I am having error at this point
         $this->middleware('admin');
     }
 
