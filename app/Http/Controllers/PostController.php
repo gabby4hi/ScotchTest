@@ -157,7 +157,7 @@ class PostController extends Controller
         $post = Post::find($id);
         $post->delete();
 
-        Session::flash('success', 'This is post as been successfully deleted');
+        Session::flash('success', 'This is post as been successfully Trashed');
 
         return redirect()->back();
     }

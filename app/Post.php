@@ -15,7 +15,8 @@ class Post extends Model
     protected $dates = ['deleted_at'];
 
     public function getFeaturedAttribute($featured){
-    	return asset($featured);
+        return asset($featured);
+    
     }
 
     public function category()

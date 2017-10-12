@@ -6,6 +6,7 @@ use Closure;
 use Auth;
 use Session;
 
+
 class Admin
 {
     /**
@@ -25,6 +26,6 @@ class Admin
            
         }
          
-       // return $next($request);
+        return $next($request);
     }
 }
