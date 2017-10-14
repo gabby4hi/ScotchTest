@@ -80,14 +80,24 @@
                         <li class="list-group-item">
                             <a href="{{ route('home') }}">Home</a>
                         </li>
-                        <li class="list-group-item">
+
+
+                        @if(Auth::user()->admin)
+                         <li class="list-group-item">
                             <a href="{{ route('users') }}">Users</a>
                         </li>
                         <li class="list-group-item">
                             <a href="{{ route('users.create') }}">Create Users </a>
                         </li>
+
+
+                        @endif
                         <li class="list-group-item">
                             <a href="{{ route('posts') }}">All Post</a>
+                        </li>
+
+                        <li class="list-group-item">
+                            <a href="{{ route('user.profile') }}">My Profile</a>
                         </li>
 
                         <li class="list-group-item">
