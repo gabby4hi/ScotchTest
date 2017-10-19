@@ -79,7 +79,8 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Welcome to AllGistBlog
+                    This site is build to help farmers
                 </div>
 
                 <div class="links">
