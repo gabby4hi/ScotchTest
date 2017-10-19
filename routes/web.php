@@ -30,6 +30,10 @@ Route::group(['prefix'=>'admin', 'middleware'=>'auth'], function(){
 	Route::post('/category/update/{id}', ['uses'=>'CategoriesController@update', 'as'=>'category.update']);
 
 
+
 });
+
+/** Remove this part below */
+Route::get('post/me', ['uses' => 'PostController@feeding', 'as'=>'post.me']);
 
 
